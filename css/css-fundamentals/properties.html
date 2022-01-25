@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attributes in CSS</title>
+        <!-- there are many different
+        attributes of styling the structure-->
+        <!--one of them is "font-size"-->
+        <style>
+            .font{
+                font-size: 20px;
+                /*change the size of the font*/
+                font-family: monospace;
+                /*change the family of the font*/
+            }
+            /*class presenting the width of a tag*/
+            .width {
+                width: 200px;
+            }
+            .border {
+                /*
+                with border, we can:
+                - change the color
+                - change the width
+                - change the style
+                - change the radius 
+                */
+                border-color:blueviolet;
+                border-width: 10px;
+                border-style:dashed;
+                border-radius: /*10px*/5%;
+            }
+            .background {
+                background-color: aquamarine;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <p class="font border">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis accusantium amet, eligendi cum reprehenderit quidem ipsum obcaecati libero beatae porro vel pariatur impedit, ipsam facilis doloremque at a recusandae!
+            </p>
+            <p class="font">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis accusantium amet, eligendi cum reprehenderit quidem ipsum obcaecati libero beatae porro vel pariatur impedit, ipsam facilis doloremque at a recusandae!
+            </p>
+            <p class="font width" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perspiciatis accusantium amet, eligendi cum reprehenderit quidem ipsum obcaecati libero beatae porro vel pariatur impedit, ipsam facilis doloremque at a recusandae!
+            </p>
+        </div>
+    </body>
+</html>

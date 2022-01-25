@@ -1,0 +1,8 @@
+ul{
+    float: right;
+}
+li{
+    display: inline-block;
+    
+    margin: auto 5px;
+}

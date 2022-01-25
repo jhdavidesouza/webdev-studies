@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inputs</title>
+    </head>
+    <body>
+        <article>
+            <h1>Inputs and Forms</h1>
+            <section>
+                <h2>Input Intro</h2>
+                <!--if you want the user give you any kind of info,
+                you might need to use input tag
+                there are a lot of types for a different purpose-->
+                <nav>
+                    <h3>Tell us why you want to unsubscribe:</h3>
+                    <ul>
+                        <input type="radio"><label>It doesn't matter</label>
+                        <input type="radio"><label>I don't like it</label>
+                        <input type="radio"><label>It's boring</label>
+                        <input type="radio"><label>Other: </label><input type="text" placeholder="Write here">
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Forms Intro</h2>
+                <!--they are usually located inside form tags
+                which can manipulate the info the user gave
+                and do something with that with the action attribute-->
+                <form action="https://www.google.com">
+                    <input type="text" placeholder="What are you looking for?">
+                    <!--Sometimes when you need a button, you can
+                    call an input tag with type 'submit'-->
+                    <input type="submit" value="Submit">
+                    <!-- or simply declarate another element called
+                    button tag, which its type is 'submit'-->
+                    <button type="submit">Submit</button>
+                    <!--both are the same thing, and seem to work the same way. therefore,
+                    these buttons will direct the given info to the URL you put in the action form attribute-->
+                </form>
+            </section>
+            <section>
+                <h2>Input Keywords</h2>
+                <input type="text" placeholder="You have to write something here" required><!--required keyword-->
+            </section>
+            <section>
+                <h2>The Radio type</h2>
+                <!--adding a name for the group so you can choose only one option-->
+                <label for="option1">
+                    <input type="radio" name="options" value="option1" id="option1">Option 1
+                </label>
+                <label for="option2">
+                    <input type="radio" name="options" value="option2" id="option2">Option 2
+                </label>
+                <label for="option3">
+                    <input type="radio" name="options" value="option3" id="option3">Option 3
+                </label>
+                <!--remember that it's important to set a value for the name attribute
+                if not, the default value will be "on" or "off"-->
+            </section>
+            <section>
+                <h2>The Checkbox type</h2>
+                <!--checkbox type-->
+                <h3>Are you...?</h3>
+                <label for="normal">
+                    <input id="normal" type="checkbox" name="who-you-are" value="normal">Normal
+                </label>
+                <label for="normal">
+                    <input id="not-normal" type="checkbox" name="who-you-are" value="not-normal">Not Normal
+                </label>
+                <label for="normal">
+                    <input id="ridiculous" type="checkbox" name="who-you-are" value="ridiculous">Ridiculous
+                </label>
+            </section>
+            <section>
+                <h2>Radio and Checkboxed with a Default Checked option</h2>
+                <label>
+                    <input id="checked" type="checkbox" name="c-default" value="checked" checked>Checked
+                </label>
+                <label>
+                    <input id="not-checked" type="checkbox" name="c-default" value="not-checked">Not Checked
+                </label>
+                <label>
+                    <input id="checked" type="radio" name="r-default" value="checked" checked>Checked
+                </label>
+                <label>
+                    <input id="not-checked" type="radio" name="r-default" value="not-checked">Not Checked
+                </label>
+            </section>
+        </article>
+    </body>
+</html>

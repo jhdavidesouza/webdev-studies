@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newsletter Subscription!</title>
+    </head>
+    <body>
+        <main>
+            <form action="https://www.google.com">
+                <!--there 2 section here-->
+                <!--1st one: email entry-->
+                <!--2nd one: selecting list of news/updates-->
+                <section id="email-entry">
+                    <h2>Welcome to our Newsletter Subscription Page!</h2>
+                    <div>
+                        <h3>First of all, write us the email:</h3>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+                </section>
+                <section id="selecting-list">
+                    <h3>Now, select the updates and news you want to receive in your mailbox:</h3>
+                    <div>
+                        <p>
+                            <label for="games"><input id="games" type="checkbox" name="news-category" checked>Games</label>
+                        </p>
+                        <p>
+                            <label for="techs"><input id="techs" type="checkbox" name="news-category" checked>Techs</label>
+                        </p>
+                        <p>
+                            <label for="programming"><input id="programming" type="checkbox" name="news-category" checked>Programming</label>
+                        </p>
+                        <p>
+                            <input type="submit" value="Subscribe">
+                        </p>
+                    </div>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>

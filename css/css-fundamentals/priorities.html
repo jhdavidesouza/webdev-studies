@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities in Declaration</title>
+    <style>
+        /*REMEMBER TO COMMENT OUT EACH DECLARATION AND TRY EACH PART DIFFERENTLY*/
+        /*this is not Math*/
+        /*this means that the order of factors here, if it's the same level (all of them are classes, or ids)*/
+        /*really matters*/
+        /*for example*/
+        
+        .small-size{
+            font-size: 10pt;
+        }
+        .big-size{
+            font-size: 30pt;/*you can see that the text has this font size because this is the last declaration here*/
+        }
+        /*P.S.: the order here matters, but not in HTML*/
+
+        /*but let's suppose we have different kinds of levels*/
+        /*for example, an id attribute and a class attribute*/
+        /*here, what matters is who is stronger, not their order*/
+        .other-size{
+            font-size: 60pt;
+        }
+        #contract-size{
+            font-size: 5pt;/*you can notice that IDs >>> CLASSES*/
+        }
+        /*there is something even stronger than IDS*/
+        /*they are the inline declarations*/
+        /*they can't be written in CSS files, because they are styles that you declarate inside the HTML tags*/
+        /*check below*/
+        /**********************************************************/
+        /*BUT WAIT....
+        THERE IS SOMETHING EVEN STRONGER THAN INLINE STYLING
+        BUT YOU HAVE TO SWEAR YOU'LL ONLY USE IT IN EMERGENCY CASES
+        WHEN YOU WANT TO BE 100% SURE THAT SOMETHING IS THAT WAY YOU WANT*/
+        /*you have to declarate that as !important */
+        /*check this out*/
+        .important-size{
+            font-size: 1pt !important;
+        }
+    </style>
+</head>
+<body>
+    <!--here, the order DOESN'T MATTER, ONLY IN CSS-->
+    <p id="contract-size" class="important-size big-size other-size small-size" style="font-size: 90pt;"><!--you see that inline declarations > everything else-->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam fugiat obcaecati laborum magnam, vero atque ut quod officiis possimus odio. Earum, natus. Voluptate iste cupiditate quam vitae deleniti, voluptatum accusantium?
+    </p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        /*CSS Variables are a good practice to not repeat same values in parts of your coding that
+        are meant to follow standards*/
+        /*so you just change it once, and you don't need to go line by line to make the change*/
+        /*for example*/
+        :root{
+            --standard-margin: 10px;
+            --standard-padding: 5px;
+            --standard-width: fit-content;
+            --standard-height: fit-content;
+            --standard-border: 3px solid black;
+            --standard-font-color: brown;
+            --standard-font-size: 10pt;
+            --standard-font-family: monospace;
+        }
+        .first{
+            margin: var(--standard-width);
+            padding: var(--standard-padding);
+
+            width: var(--standard-width);
+            height: var(--standard-height);
+
+            border: var(--standard-border);
+
+            color:var(--standard-font-color);
+            font-size: var(--standard-font-size);
+            font-family: var(--standard-font-family);
+
+        }
+        .second{
+            margin: var(--standard-margin);
+            padding: var(--standard-padding);
+
+            width: 500px;
+            height: 500px;
+
+            background-color: blue; 
+            color: brown;
+            color: var(--standard-font-color);
+            font-size: var(--standard-font-size);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure quam vitae, ex similique quibusdam eveniet accusantium ullam corrupti ratione, sed id esse consequuntur, necessitatibus quod eos itaque laboriosam aperiam!
+    </p>
+    <p class="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maxime repellat dolor libero quibusdam amet ipsam, assumenda, reprehenderit asperiores quisquam quos. Debitis quam quasi vitae quisquam nostrum dolore pariatur suscipit?
+    </p>
+    <p class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti id vero, harum numquam quidem autem quisquam odit quas eligendi suscipit consectetur ad quibusdam consequuntur doloremque a reprehenderit neque quis!
+    </p>
+</body>
+</html>

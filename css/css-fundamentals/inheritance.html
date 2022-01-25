@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body{
+            background-color: rgb(68, 0, 255);
+            color:brown;
+            font-size: 30pt;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /*let's do something just to clean out all the dirt from the tags peculiarities*/
+        h1{
+            font-size: inherit;
+            margin: inherit;
+            padding: inherit;
+        }
+        h3{
+            font-size: inherit;
+            margin: inherit;
+            padding: inherit;
+        }
+        p{
+            font-size: inherit;
+            margin: inherit;
+        }
+        /*the result is that it really gets the characteristics from their 'father' tag*/
+        /*results: <body> is Darth Vader and <other tags> are its subordinates*/
+    </style>
+</head>
+<body>
+    <!--You can see that, even though the properties were declarated inside body selector-->
+    <!--the tags inside get the same characteristics if they don't have their unique particularities-->
+    <!--for example, <h1> is a tag that already has its own font-size, therefore, it won't inherit from <body>-->
+    <h1>Title</h1>
+    <h3>Subtitle</h3>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellendus, magnam at perferendis ad, dolor placeat nobis commodi nostrum officia quam temporibus quo quia numquam soluta alias cum maiores exercitationem.
+    </p>
+</body>
+</html>

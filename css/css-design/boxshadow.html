@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow Property</title>
+    <style>
+        .boxshadow{
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            border-radius: 10px;
+
+            text-align: justify;
+            /*this is how you put a shadow around your element*/
+            box-shadow: 5px/*horizontal shadow allocation*/ 5px/*vertical shadow allocation*/ 5px/*how blurred it is*/ 3px/*shadow spreading*/ rgba(55, 55, 55, 0.8)/*shadow color*/;
+        }
+        div > h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxshadow">
+        <h1>Test</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eveniet cum animi ipsam tempora cumque dicta aut eaque sint rerum iusto quae autem dolores quam sed. Officiis ut voluptas non!</p>
+    </div>
+</body>
+</html>

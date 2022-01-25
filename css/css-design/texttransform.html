@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transforming</title>
+    <style>
+        /*capitalize the text*/
+        .capitalize{
+            text-transform: capitalize;
+        }
+        /*just lowercase letters*/
+        .lowercase{
+            border: 2px solid black;
+            text-transform: lowercase;
+        }
+        /*just uppercase letters*/
+        .uppercase{
+            text-transform: uppercase;
+        }
+        /*inherits the value of text-transform
+        property from its parent element*/
+        .inherit{
+            text-transform: inherit;
+        }
+        /*these two below seem the most useless
+        because they don't do anything */
+        .initial{
+            text-transform: initial;
+        }
+        .none{
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="capitalize">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores unde earum neque eveniet repudiandae, iste excepturi quisquam. Quibusdam inventore quos iusto quisquam facere ex quis aliquam ut optio repudiandae.
+    </p>
+    <p class="lowercase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem quaerat nobis nihil. Corrupti dolor, voluptate atque, fugit dolorum architecto veritatis ad tempora officiis earum non est voluptatem mollitia. Fuga.
+    </p>
+    <div class="lowercase">
+        <h1>text uppercase</h1>
+        <p class="uppercase">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate officia dolor odit asperiores ipsa rerum quos consequuntur nobis sapiente consequatur laborum, porro quae dolorum, eaque ducimus explicabo. Necessitatibus, nesciunt quidem!
+        </p>
+        <h1>text inherits lowercase</h1>
+        <p class="lowercase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime fugiat, sit blanditiis quam labore aut consequuntur dolorum maiores, minima amet explicabo dolorem commodi. Inventore ad cupiditate quis! Necessitatibus, vitae.
+        </p>
+    </div>
+    <p class="initial">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae explicabo voluptatem totam esse placeat facilis consequatur laboriosam ipsa qui. Tenetur recusandae omnis ullam praesentium beatae ducimus doloribus accusamus, nam voluptas.
+    </p>
+    <p class="none">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem, sed vel necessitatibus totam optio dolor dolorem porro quam a corporis dicta quo iste exercitationem dolore nostrum ea aliquam veniam?
+    </p>
+</body>
+</html>

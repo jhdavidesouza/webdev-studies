@@ -1,0 +1,28 @@
+*{
+    text-align: justify;
+}
+
+div{
+    width: auto;
+    height: 100px;
+
+    margin: 1% auto;
+
+    background-color: blue;
+}
+section{
+    width: auto;
+    height: 200px;
+
+    margin: 1% auto;
+
+    background-color: blueviolet;
+}
+article{
+    width: auto;
+    height: 300px;
+
+    margin: 1% auto;
+
+    background-color: aquamarine;
+}
