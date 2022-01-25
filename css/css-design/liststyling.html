@@ -1,0 +1,46 @@
+<!-- We can style lists the way we want-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Styling Lists</title>
+    <style type="text/css">
+        #list{
+            font-size: 30px;
+            /* when you want to change 
+                the style of list item 
+                - disc
+                - bullet
+                - armenian
+                - circle
+                -decimal
+                etc   
+
+                or just type a symbol code
+                e.g.: "\1F44D"
+
+                reference link:
+                https://www.toptal.com/designers/htmlarrows/symbols/#
+            */
+            list-style-type: "\00A7";
+            /* when you want to change
+                the position of bullet
+                element */
+            list-style-position: inside;
+            /* you can apply images
+                to your list items
+                instead of applying
+                solid forms */
+            list-style-image: url("https://cdn-icons-png.flaticon.com/512/87/87390.png");
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
